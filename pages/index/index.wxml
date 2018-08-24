@@ -1,0 +1,9 @@
+<!--pages/index/index.wxml-->
+<view class="container">
+ <image class="avatar" src='{{userInfo.avatarUrl}}'></image>
+ <button bindgetuserinfo='handerGetUserInfo' style="{{isShow?'display: block':'display: none'}}" open-type="getUserInfo">获取用户信息</button>
+ <text class="userName">hello {{userInfo.nickName}}</text>
+ <view class="goPrograme">
+  <text catchtap='handerChild'>开启小程序之旅</text>
+ </view>
+</view>
